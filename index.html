@@ -101,6 +101,28 @@
       </div>
     </form>
   </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAQ5ffnlAJb2UAE5n0A7d-M4zUdQLTH2OU",
+      authDomain: "pk-contacts-db-ae0e2.firebaseapp.com",
+      projectId: "pk-contacts-db-ae0e2",
+      storageBucket: "pk-contacts-db-ae0e2.appspot.com",
+      messagingSenderId: "856804543238",
+      appId: "1:856804543238:web:3101108eb0e5db710eac87"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore();
+  </script>
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
